@@ -162,8 +162,8 @@ const About = () => {
               <div className="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Globe className="text-white" size={28} />
               </div>
-              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Global Support</h4>
-              <p className="text-gray-600 text-sm sm:text-base">International sales and support team providing seamless service across all time zones and markets.</p>
+              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Local to National Reach</h4>
+              <p className="text-gray-600 text-sm sm:text-base">We make sure your products don’t just stay local — they travel across India with secure and reliable delivery.</p>
             </div>
           </div>
         </div>

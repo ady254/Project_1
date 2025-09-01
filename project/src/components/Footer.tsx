@@ -62,12 +62,15 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="flex space-x-4 mt-6">
-              <a 
-                href="https://www.instagram.com/metalstickersfaridabadfactory/" 
-                className="w-10 h-10 bg-gray-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors"
-              >
-                <Instagram size={18} />
-              </a>
+               <a
+              href="https://www.instagram.com/metalstickersfaridabadfactory/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-3 py-1 rounded-full hover:opacity-90 transition text-white w-max"
+            >
+              <Instagram size={14} />
+              <span>Instagram</span>
+            </a>
             </div>
           </div>
 
@@ -99,7 +102,7 @@ const Footer = () => {
                     <span>Product Catalogue</span>
                   </a>
                 </li>
-                <li>
+               {/*<li>
                   <a href="#" className="text-gray-300 hover:text-amber-400 transition-colors flex items-center space-x-2">
                     <Download size={14} />
                     <span>Technical Specifications</span>
@@ -110,7 +113,7 @@ const Footer = () => {
                     <ExternalLink size={14} />
                     <span>Quality Certificates</span>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -155,17 +158,17 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-gray-400 text-center md:text-left">
-              © 2025 Metal Stickers India. All rights reserved. | ISO 9001:2015 Certified
+          
+            <div className="text-sm text-gray-400 text-center">
+              © 2025 Metal Stickers India. All rights reserved. | GST NO. 06ABZFM3928P1Z7
             </div>
 
-            <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-gray-400">
+           {/* <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-gray-400">
               <a href="#" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-amber-400 transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-amber-400 transition-colors">Quality Policy</a>
-            </div>
-          </div>
+            </div> */}
+          </div> 
 
           <div className="mt-4 pt-4 border-t border-gray-800 text-center">
             <p className="text-xs text-gray-500 leading-relaxed">
@@ -174,7 +177,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
+      
     </footer>
   );
 };

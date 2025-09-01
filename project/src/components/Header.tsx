@@ -62,7 +62,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img
-              src="/public/LOGO.png"
+              src="/LOGO.png"
               alt="Metal Stickers India"
               className="h-10 w-auto sm:h-12"
             />

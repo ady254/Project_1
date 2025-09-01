@@ -2,14 +2,14 @@ import { useState } from "react";
 import { ArrowRight, ArrowDown, X } from "lucide-react";
 
 const productImages = [
-  "/chrome-finish.png",
-  "/4.png",
-  "/rose-gold.png",
-  "/gold-finish.png",
+  "/12.png",
+  "/11.png",
+  "/13.png",
+  "/14.png",
   "/silver-finish.png", 
-  "/6.png",
-  "/01.png",
-  "/02.png",
+  "/rose-gold.png", 
+  "/4.png", 
+  "/gold-finish.png", 
 ];
 
 const testimonials = [

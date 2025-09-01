@@ -71,6 +71,20 @@ const ClientCarousel = () => {
         .animate-scroll:hover {
           animation-play-state: paused;
         }
+
+        /* Tablet speed */
+        @media (max-width: 1024px) {
+          .animate-scroll {
+            animation-duration: 20s;
+          }
+        }
+
+        /* Mobile speed */
+        @media (max-width: 640px) {
+          .animate-scroll {
+            animation-duration: 15s;
+          }
+        }
       `}</style>
     </section>
   );

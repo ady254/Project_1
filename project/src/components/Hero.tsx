@@ -1,4 +1,4 @@
-import { ArrowRight, Award, Globe, Zap } from 'lucide-react';
+import { ArrowRight, Award,  Zap } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -49,7 +49,7 @@ const Hero = () => {
             </p>
 
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center ">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-amber-500 to-amber-600 rounded-lg flex items-center justify-center">
                   <Zap className="text-white" size={20} />
@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-3">
+           {/*   <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
                   <Globe className="text-white" size={20} />
                 </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-400">International Brands</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center">

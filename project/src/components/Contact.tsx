@@ -314,8 +314,8 @@ const Contact = () => {
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="text-white" size={24} />
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Global Shipping</h4>
-              <p className="text-sm text-gray-600">Worldwide delivery with tracking</p>
+              <h4 className="font-semibold text-gray-900 mb-2">Pan-India Delivery</h4>
+              <p className="text-sm text-gray-600">Fast, secure shipping across all major cities.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
