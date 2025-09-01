@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle, Instagram, Download, ExternalLink, View } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram, View } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
@@ -99,7 +99,7 @@ const Footer = () => {
                     className="text-gray-300 hover:text-amber-400 transition-colors flex items-center space-x-2"
                   >
                     <View size={14} />
-                    <span>Product Catalogue</span>
+                    <span>View Catalogue</span>
                   </a>
                 </li>
                {/*<li>
