@@ -4,6 +4,10 @@ import { Menu, X, Phone, Mail, MessageCircle, Instagram } from 'lucide-react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavClick = () => {
+    setIsMenuOpen(false); // close mobile menu after clicking
+  };
+
   return (
     <header className="bg-gradient-to-r from-white-200 via-white-900 to-gray-900 text-black shadow-2xl sticky top-0 z-50">
       {/* Top Contact Bar */}
@@ -23,7 +27,6 @@ const Header = () => {
               className="flex items-center space-x-2 hover:text-amber-100 transition-colors"
             >
               <Mail size={14} />
-              {/* Wrapping email on small screens */}
               <span className="break-all text-center sm:text-left">
                 corporatemetalstickers@gmail.com
               </span>
@@ -41,7 +44,6 @@ const Header = () => {
               <MessageCircle size={14} />
               <span>WhatsApp</span>
             </a>
-            {/* Instagram */}
             <a
               href="https://www.instagram.com/metalstickersfaridabadfactory/"
               target="_blank"
@@ -83,7 +85,7 @@ const Header = () => {
             <a href="#contact" className="hover:text-amber-400 transition-colors font-medium">Contact</a>
           </nav>
 
-          {/* CTA Buttons */}8
+          {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="#contact"
@@ -112,20 +114,22 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-gray-700">
             <nav className="flex flex-col space-y-4 mt-4">
-              <a href="#home" className="hover:text-amber-400 transition-colors">Home</a>
-              <a href="#about" className="hover:text-amber-400 transition-colors">About</a>
-              <a href="#products" className="hover:text-amber-400 transition-colors">Products</a>
-              <a href="#productgallery" className="hover:text-amber-400 transition-colors">Product Gallery</a>
-              <a href="#contact" className="hover:text-amber-400 transition-colors">Contact</a>
+              <a href="#home" onClick={handleNavClick} className="hover:text-amber-400 transition-colors">Home</a>
+              <a href="#about" onClick={handleNavClick} className="hover:text-amber-400 transition-colors">About</a>
+              <a href="#products" onClick={handleNavClick} className="hover:text-amber-400 transition-colors">Products</a>
+              <a href="#productgallery" onClick={handleNavClick} className="hover:text-amber-400 transition-colors">Product Gallery</a>
+              <a href="#contact" onClick={handleNavClick} className="hover:text-amber-400 transition-colors">Contact</a>
               <div className="flex flex-col space-y-2 pt-4">
                 <a
                   href="#contact"
+                  onClick={handleNavClick}
                   className="bg-gradient-to-r from-amber-600 to-amber-500 px-6 py-2 rounded-lg font-semibold"
                 >
                   Request Quote
                 </a>
                 <a
                   href="tel:+919311862900"
+                  onClick={handleNavClick}
                   className="border-2 border-amber-500 px-6 py-2 rounded-lg font-semibold"
                 >
                   Contact Experts

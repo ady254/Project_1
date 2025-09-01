@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1200, // animation duration
-      once: true,     // whether animation should happen only once
+      once: true, // whether animation should happen only once
       easing: "ease-in-out", // easing effect
     });
   }, []);
@@ -25,23 +25,38 @@ function App() {
     <>
       <SplashScreen />
       <Header />
-      <Hero />
-      <div data-aos="fade-up">
+
+      {/* Hero Section */}
+      <section id="hero">
+        <Hero />
+      </section>
+
+      {/* Clients */}
+      <section id="clients" data-aos="fade-up">
         <ClientCarousel />
-      </div>
-      <div data-aos="zoom-in">
+      </section>
+
+      {/* About */}
+      <section id="about" data-aos="zoom-in">
         <About />
-      </div>
-      <div data-aos="fade-right">
+      </section>
+
+      {/* Products */}
+      <section id="products" data-aos="fade-right">
         <Products />
-      </div>
-      <div data-aos="fade-left">
+      </section>
+
+      {/* Product Gallery */}
+      <section id="product-gallery" data-aos="fade-left">
         <Productgallery />
-      </div>
-      
-      <div data-aos="flip-up">
+      </section>
+
+      {/* Contact */}
+      <section id="contact" data-aos="flip-up">
         <Contact />
-      </div>
+      </section>
+
+      {/* Footer */}
       <Footer />
     </>
   );

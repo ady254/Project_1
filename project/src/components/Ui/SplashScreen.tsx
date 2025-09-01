@@ -22,18 +22,16 @@ const SplashScreen = () => {
         transition-opacity duration-700
         ${fadeOut ? "opacity-0" : "opacity-100"}`}
     >
-      <div className="text-center">
-        {/* Company Logo */}
+      {/* Wrap logo + text in one flex column */}
+      <div className="flex flex-col items-center justify-center text-center">
         <img
-          src="/public/LOGO.png"
-          alt="Logo"
-          className="h-20 mx-auto animate-bounce"
+          src="/LOGO.png"
+          alt="Metal Stickers India Logo"
+          className="h-20 sm:h-24 md:h-28 lg:h-32 object-contain mx-auto"
         />
-
-        {/* Company Name */}
-        <h1 className="mt-4 text-2xl font-bold text-white animate-pulse">
+        <span className="mt-4 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white animate-pulse">
           Metal Stickers India
-        </h1>
+        </span>
       </div>
     </div>
   );

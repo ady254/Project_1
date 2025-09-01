@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 /* Make sure your build tool uses PostCSS with Tailwind CSS plugin */
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
