@@ -154,10 +154,15 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
+          
           <div className="lg:col-span-2 space-y-8">
             <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+              action="https://formspree.io/f/xblaaypb"
+              method="POST"
+               className="space-y-6"
+               >
                 {/* Name + Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -270,6 +275,18 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
+
+                 <div className="flex items-center mt-6">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  className="w-4 h-4 mr-2 border rounded text-primary-600 focus:ring-primary-500 border-slate-300"
+                  required
+                />
+                <label htmlFor="consent" className="text-sm text-slate-700">
+                  I consent to having this website store my submitted information so they can respond to my inquiry.
+                </label>
+              </div>
 
                 {/* Submit */}
                 <button

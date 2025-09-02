@@ -186,7 +186,7 @@ const Services = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#contact"
+                href="https://calendly.com/corporatemetalstickers/30min"
                 className="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all"
               >
                 Schedule Consultation
